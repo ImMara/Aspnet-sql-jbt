@@ -1,0 +1,19 @@
+@model API.Models.IndexViewModel
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+<h2>title</h2>
+<div class="row">
+    <div class="col-md-12">
+        <h2>Application IDs</h2>
+        <ul>
+            @foreach (var id in Model.Ids)
+            {
+            <li>@id</li>
+            }
+        </ul>
+    </div>
+</div>

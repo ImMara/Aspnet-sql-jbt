@@ -1,6 +1,7 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
+@model API.Models.IndexViewModel
 
 <div class="jumbotron">
     <h1>ASP.NET</h1>
@@ -41,7 +42,7 @@
     <div class="col-md-12">
         <h2>Application IDs</h2>
         <ul>
-            @foreach (var id in Model)
+            @foreach (var id in Model.Ids)
             {
             <li>@id</li>
             }
